@@ -45,20 +45,26 @@ main{
 }
 
 .cards{
+    display: flex;
+    flex-direction: column;
     padding: 24px;
     border-radius: 8px;
     border: 1px solid var(--primary-color);
+    gap: 8px;
 
 }
 .card{
     display: flex;
     gap: 8px;
+    
 
     & .dot{
-        width: 8px;
-        height: 8px;
+        margin-top: 12px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background-color: var(--secundary-color);
+        flex-shrink: 0;
     }
 }
 
